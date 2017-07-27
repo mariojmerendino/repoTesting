@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<!-- Calls scripts & css, sets title -->
+<head>
+    <link rel="shortcut icon" href="images/medidata.png">
+    <link rel="stylesheet" type="text/css" href="stylesheets/dash.css">
+    <script type="text/javascript" src="scripts/dashNav.js"></script>
+
+    <!--Google Charts -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {packages: ['corechart']});     
+    </script>
+    <script type="text/javascript" src="scripts/linegraph.js"></script>
+
+        <script type ="text/javascript" src = "scripts/progressbar.js"></script>
+        <script type ="text/javascript" src = "scripts/circle.js"></script>
+    <title>Audit Database Dashboard</title>
+</head>
+
+<html>
+    <div style="min-width: 960px; margin: 0 auto;">
+    <!-- Navbar --> 
+    <div class="navBar">
+        <img class="logo" src="https://www.mdsol.com/sites/all/themes/custom/md_theme/images/logo/md-logo--primary-blue.png" onclick = "logoClick()">
+        <label class="barItem " onclick="home()">Home</label>
+        <label class="barItem" onclick= "stats()" >Server Stats</label>
+        <label class="barItem selectedBarItem" onclick= "help()">Help</label>
+        <img  class="barItem"   src="images/settings.png" style="width:40px;height:40px;" ALIGN=RIGHT  onclick="logout();">
+        
+    </div>
+    <div>
+        
+        <b><label>Need help? Same...</label></b>
+    </div>
+    <footer>
+        <label> Medidata Inc. 2017 </label>
+    </footer>
+    </div>
+</html>

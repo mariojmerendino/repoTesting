@@ -1,0 +1,36 @@
+body
+{
+  padding: 30px;
+  background-color: #fcfcfc;
+}
+.outer-div
+{
+  padding: 30px;
+}
+.inner-div
+{
+  margin: auto;
+  width: 400px;
+  height: 500px;
+  background-color: #f4f4f4;
+  border-radius: 3px;
+  text-align: left;
+  font-family: Akkurat;
+}
+.buttonDiv{
+  text-align: right;
+}
+h1{
+      font-family: Akkurat;
+      background-color: #3b5998;
+      border-radius: 3px;
+      width: 85%;
+      
+
+}
+.begin {
+    padding-top: 50px;
+}
+.container {
+    padding: 16px;
+}
