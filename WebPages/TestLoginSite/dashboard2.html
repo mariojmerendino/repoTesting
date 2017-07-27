@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<!-- Calls scripts & css, sets title -->
+<head>
+    <link rel="shortcut icon" href="images/medidata.png">
+    <link rel="stylesheet" type="text/css" href="stylesheets/dash.css">
+    <script type="text/javascript" src="scripts/dashNav.js"></script>
+
+    <!--Google Charts -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {packages: ['corechart']});     
+    </script>
+    <script type="text/javascript" src="scripts/linegraph.js"></script>
+
+        <script type ="text/javascript" src = "scripts/progressbar.js"></script>
+        <script type ="text/javascript" src = "scripts/circle.js"></script>
+    <title>Audit Database Dashboard</title>
+</head>
+
+<html>
+    <div style="min-width: 960px; margin: 0 auto;">
+    <!-- Navbar --> 
+    <div class="navBar">
+        <a href="images/medidata.png" download="logo.png">
+            <img  class="logo" src="https://www.mdsol.com/sites/all/themes/custom/md_theme/images/logo/md-logo--primary-blue.png" onclick = "logoClick()">
+        </a>
+        <label class="barItem selectedBarItem" onclick="home()">Home</label>
+        <label class="barItem" onclick= "stats()" >Server Stats</label>
+        <label class="barItem" onclick="help()" >Help</label>
+        <img  class="barItem"   src="images/settings.png" style="width:40px;height:40px;" ALIGN=RIGHT  onclick="logout();">
+        
+    </div>
+    <!-- Circular Progress bar --> 
+    <div class = "progress" id="progress">
+                <script>createCircle(.2355)</script>
+    </div>
+
+    <!-- Graph -->
+    <div id = 'chart_div'  style="width: 550px; height: 400px; margin: 0 auto"></div>
+    
+    <!-- footer --> 
+    <footer>
+        <label> Medidata Inc. 2017 </label>
+    </footer>
+    </div>
+</html>

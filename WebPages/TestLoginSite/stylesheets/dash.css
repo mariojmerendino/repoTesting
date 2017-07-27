@@ -1,0 +1,37 @@
+.barItem{
+    font-family: Garamond;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    padding-left: 40px;
+    
+}
+.navBar{
+    background-color: #3b5998;
+    border-radius: 5px;
+    width: 100%;
+    
+}
+.barItem:hover{
+    text-decoration: underline;
+}
+.selectedBarItem{
+    text-decoration: underline;
+}
+.wholepage{
+
+}
+.logo{
+    padding-left: 10px;
+    padding-top: 5px;
+}
+#progress {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+}
+.chartContainer{
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+}

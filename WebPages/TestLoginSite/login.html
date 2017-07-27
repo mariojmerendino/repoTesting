@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<head>
+    <link rel="shortcut icon" href="images/medidata.png">
+    <script type="text/javascript" src="scripts/login.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/login.css">
+</head>
+<title>Audit Database login</title>
+<div>
+    <img src="https://www.mdsol.com/sites/all/themes/custom/md_theme/images/logo/md-logo--primary-blue.png">
+</div>
+<div class="outer-div">
+    <div class="inner-div">
+        <div class="begin">
+        <center><h1>Audit Database Dashboard</h1></center>
+
+        <form>
+            <div class= "container" >
+                <div>
+                    <label><b>Database</b></label>
+                    <select>
+                        <option value="B04">B04</option>
+                        <option value="BangO">BangO</option>
+                        <option value="Cruise">Cruise</option>
+                        <option value="SandBox">Sandbox</option>
+                    </select>
+                    
+                </div>
+                <br> 
+                <div>
+                    <label ><b>Username</b></label>
+                    <input type="text" id="usrField" placeholder="Enter Username" name="uname" required >
+                </div>
+                <br>
+                <div>
+                    <label><b>Password</b></label>
+                    <input type="password" id="passField" placeholder="Enter Password" name="psw" required >
+                </div>
+                
+                <br><br>
+
+                <div class = "buttonDiv" >
+                    <button style="width: 75px" type="submit" onclick = "login()">Login</button>
+                    <br>
+                    <input type="checkbox" checked="checked"> Remember me
+                </div>
+            </div>
+        </form>
+
+        </div>
+    </div>
+</div>
+
